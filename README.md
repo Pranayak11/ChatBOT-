@@ -23,10 +23,9 @@ pip install -r requirements.txt
 
 
 2. Start Ollama and load the model
-bash
-Copy
-Edit
+```bash
 ollama pull mistral
+
 
 Built by Pranaya Khunteta
 Email: pranayakhunteta@gmail.com
