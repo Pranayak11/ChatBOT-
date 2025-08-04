@@ -1,31 +1,58 @@
-#  PDF Question Answering Chatbot
+# PDF Question Answering Chatbot
 
-This is a document-based chatbot that lets you ask questions about the contents of any uploaded PDF file. It uses natural language processing to find the most relevant answers based on the document.
-
----
-
-##  What It Does
-
-- Upload a PDF
-- Breaks it into smaller readable parts (chunking)
-- Converts those parts into numeric vectors (embeddings)
-- Stores and searches them efficiently
-- Uses a language model to answer user queries based on the content
-- Streams the answer and shows source chunks
+This is a simple, local chatbot that answers questions based on the content of any uploaded PDF file. It reads the document, splits it into chunks, stores the information, and uses a local LLM to generate accurate answers.
 
 ---
 
-##  How to Run
+## What It Does
 
-### 1. Install dependencies
+- Upload a PDF from the interface
+- Splits the content into chunks (with overlap) for better context
+- Converts those chunks into vector embeddings
+- Stores the vectors in a local Chroma database
+- Uses a local model (Mistral via Ollama) to answer your question
+- Displays the streamed answer and the top source chunks
+
+---
+
+## How to Run
+
 ```bash
 pip install -r requirements.txt
-
-
-2. Start Ollama and load the model
-```bash
 ollama pull mistral
+streamlit run app.py
 
+---
 
+ How It Works
+PDF Reading: Done with PyPDF2
+
+Chunking: Uses LangChain's recursive splitter (chunk size = 500, overlap = 100)
+Embeddings: Via HuggingFace model all-MiniLM-L6-v2
+Vector DB: Stored locally in Chroma
+Retrieval: Relevant chunks selected based on user query
+LLM Response: Mistral (runs locally via Ollama)
+Interface: Streamlit with styled layout and sidebar info
+
+---
+
+ Features
+Runs completely offline (after setup)
+Fast and contextual answers
+Shows relevant source chunks
+Clean, minimal UI with branding
+Uses open-source tools only
+
+---
+
+ Tech Stack
+Function	Tool
+PDF Parsing	PyPDF2
+Chunking	LangChain Text Splitter
+Embeddings	HuggingFace MiniLM
+Vector DB	Chroma
+LLM	Mistral via Ollama
+Frontend	Streamlit
+---
 Built by Pranaya Khunteta
 Email: pranayakhunteta@gmail.com
