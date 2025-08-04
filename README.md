@@ -21,7 +21,7 @@ This is a simple, local chatbot that answers questions based on the content of a
 pip install -r requirements.txt
 ollama pull mistral
 streamlit run app.py
-
+```
 ---
 
 ## How It Works
