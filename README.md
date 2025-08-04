@@ -46,13 +46,18 @@ Uses open-source tools only
 ---
 
 ## Tech Stack
-Function	Tool
-PDF Parsing	PyPDF2
-Chunking	LangChain Text Splitter
-Embeddings	HuggingFace MiniLM
-Vector DB	Chroma
-LLM	Mistral via Ollama
-Frontend	Streamlit
+
+  | Function    | Tool                    |
+| ----------- | ----------------------- |
+| PDF Parsing | PyPDF2                  |
+| Chunking    | LangChain Text Splitter |
+| Embeddings  | HuggingFace MiniLM      |
+| Vector DB   | Chroma                  |
+| LLM         | Mistral via Ollama      |
+| Frontend    | Streamlit               |
+
+
 ---
+
 Built by Pranaya Khunteta
 Email: pranayakhunteta@gmail.com
