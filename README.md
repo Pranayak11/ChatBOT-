@@ -24,7 +24,7 @@ streamlit run app.py
 
 ---
 
- How It Works
+## How It Works
 PDF Reading: Done with PyPDF2
 
 Chunking: Uses LangChain's recursive splitter (chunk size = 500, overlap = 100)
@@ -36,7 +36,7 @@ Interface: Streamlit with styled layout and sidebar info
 
 ---
 
- Features
+## Features
 Runs completely offline (after setup)
 Fast and contextual answers
 Shows relevant source chunks
@@ -45,7 +45,7 @@ Uses open-source tools only
 
 ---
 
- Tech Stack
+## Tech Stack
 Function	Tool
 PDF Parsing	PyPDF2
 Chunking	LangChain Text Splitter
