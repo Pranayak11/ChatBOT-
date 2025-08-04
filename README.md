@@ -14,6 +14,7 @@ This is a simple, local chatbot that answers questions based on the content of a
 - Displays the streamed answer and the top source chunks
 
 ---
+<img width="1922" height="760" alt="image" src="https://github.com/user-attachments/assets/8e8bc9fb-5cc4-4000-97df-c414a496bbed" />
 
 ## How to Run
 
