@@ -8,7 +8,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.llms import Ollama
 from langchain.chains import RetrievalQA
 
-st.set_page_config(page_title=" AMLGOLABS AI Chatbot", layout="wide")
+st.set_page_config(page_title=" AI Chatbot", layout="wide")
 st.markdown("""
     <style>
         .main { background-color: #f0f4f8; }
@@ -33,14 +33,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.image("AMLGOLOGO.png", width=150)
+st.sidebar.image("AMLGOLOG.png", width=150)
 st.sidebar.title(" AMLGOLABS Chat Assistant")
 st.sidebar.markdown("####  Empowering Documents with AI Intelligence")
 
 st.markdown("""
     <div style='text-align: center;'>
         <img src='AMLGO.png' width='120'>
-        <h1 style='color: #1f3b57;'>AMLGOLABS - Intelligent Document Chatbot</h1>
+        <h1 style='color: #1f3b57;'>Intelligent Document Chatbot</h1>
         <h4 style='color: #455a64;'>Ask smart questions, get contextual answers — powered by open-source LLMs.</h4>
     </div>
     <hr>
@@ -121,3 +121,4 @@ if uploaded_file:
 
 else:
     st.info(" Please upload a PDF document to begin.")
+
